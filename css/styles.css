@@ -1,0 +1,293 @@
+/*
+body {
+  font-family: Arial, sans-serif;
+  background: #f4f4f4;
+  margin: 0;
+  padding: 0;
+}
+
+header {
+  background: #2c3e50;
+  color: white;
+  padding: 1rem;
+  text-align: center;
+}
+
+.controls {
+  margin-top: 0.5rem;
+}
+
+.controls button {
+  padding: 0.3rem 0.6rem;
+  margin: 0 0.5rem;
+  cursor: pointer;
+}
+
+.calendar {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+  gap: 1rem;
+  padding: 1rem;
+}
+
+.week {
+  background: white;
+  border-radius: 6px;
+  padding: 1rem;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+.week h3 {
+  margin-top: 0;
+  color: #34495e;
+}
+
+.week ul {
+  padding-left: 1.2rem;
+}
+
+.month-calendar {
+  background: white;
+  margin: 1rem;
+  padding: 1.2rem 3.5rem;
+  border-radius: 6px;
+}
+
+.month-grid {
+  display: grid;
+  grid-template-columns: repeat(8, 1fr);
+  gap: 4px;
+  text-align: center;
+}
+
+.month-grid .day-name {
+  font-weight: bold;
+  color: #555;
+}
+
+.month-grid .day {
+  padding: 0.5rem;
+  border-radius: 4px;
+  font-size: 0.85rem;
+}
+
+.month-grid .empty {
+  background: transparent;
+}
+
+.month-grid .today {
+  outline: 2px solid #333;
+}
+
+.team-cell {
+  font-weight: bold;
+  font-size: 0.75rem;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  padding: 0.3rem;
+}
+
+.team-cell {
+  position: relative;
+  cursor: default;
+}
+
+.team-tooltip {
+  position: absolute;
+  top: 50%;
+  left: 105%;
+  transform: translateY(-50%);
+  background: #333;
+  color: white;
+  padding: 0.5rem 0.7rem;
+  border-radius: 6px;
+  font-size: 0.75rem;
+  white-space: nowrap;
+  opacity: 0;
+  pointer-events: none;
+  transition: opacity 0.2s ease;
+  z-index: 10;
+}
+
+.team-cell:hover .team-tooltip {
+  opacity: 1;
+}
+
+@media (max-width: 600px) {
+  .month-calendar {
+    padding: 1rem 1.2rem;
+  }
+}
+*/
+
+/* =========================
+   BASE
+========================= */
+body {
+  font-family: "Oswald", Arial, sans-serif;
+  background: #1c1c1c; /* asfalto */
+  margin: 0;
+  padding: 0;
+  color: #eaeaea;
+}
+
+/* =========================
+   HEADER
+========================= */
+header {
+  background: linear-gradient(90deg, #111, #2a0000);
+  color: #fff;
+  padding: 1.2rem;
+  text-align: center;
+  border-bottom: 2px solid #7a0000;
+}
+
+header h1::before {
+  content: "☠️ ";
+}
+
+.controls {
+  margin-top: 0.6rem;
+}
+
+.controls button {
+  padding: 0.3rem 0.6rem;
+  margin: 0 0.5rem;
+  cursor: pointer;
+  background: #2a0000;
+  color: #fff;
+  border: 1px solid #7a0000;
+  border-radius: 4px;
+}
+
+.controls button:hover {
+  background: #7a0000;
+}
+
+/* =========================
+   CALENDAR SEMANAL (CARDS)
+========================= */
+.calendar {
+  background: #807a7a;
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
+  gap: 1rem;
+  margin: 1rem;
+  padding: 1.2rem 3.5rem;
+  border-radius: 6px;
+  border: 1px solid rgba(122, 0, 0, 0.5);
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.7);
+}
+
+.week {
+  background: #f9f9f9;
+  border-radius: 6px;
+  padding: 1rem;
+  color: #222;
+  border: 1px solid rgba(0, 0, 0, 0.15);
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.6);
+}
+
+.week ul {
+  padding-left: 1.2rem;
+}
+
+/* =========================
+   CALENDARIO MENSUAL
+========================= */
+.month-calendar {
+  background: #807a7a;
+  margin: 1rem;
+  padding: 1.2rem 3.5rem;
+  border-radius: 6px;
+  border: 1px solid rgba(122, 0, 0, 0.5);
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.7);
+}
+
+.month-grid {
+  display: grid;
+  grid-template-columns: repeat(8, 1fr);
+  gap: 4px;
+  text-align: center;
+}
+
+.month-grid .day-name {
+  font-weight: bold;
+  color: #7a0000;
+  font-size: 0.85rem;
+  text-transform: uppercase;
+}
+
+/* =========================
+   DÍAS
+========================= */
+.month-grid .day {
+  padding: 0.5rem;
+  border-radius: 4px;
+  font-size: 0.85rem;
+  color: #222;
+}
+
+/* Día actual */
+.month-grid .today {
+  outline: 2px solid #7a0000;
+  outline-offset: -2px;
+}
+
+/* =========================
+   CELDA EQUIPO
+========================= */
+.team-cell {
+  font-weight: bold;
+  font-size: 0.75rem;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  padding: 0.3rem;
+  position: relative;
+  cursor: default;
+  text-transform: uppercase;
+  letter-spacing: 0.5px;
+}
+
+/* =========================
+   TOOLTIP EQUIPO
+========================= */
+.team-tooltip {
+  position: absolute;
+  top: 50%;
+  left: 105%;
+  transform: translateY(-50%);
+  background: #2a0000;
+  color: #fff;
+  padding: 0.5rem 0.7rem;
+  border-radius: 6px;
+  font-size: 0.75rem;
+  white-space: nowrap;
+  opacity: 0;
+  pointer-events: none;
+  transition: opacity 0.2s ease;
+  z-index: 10;
+  border: 1px solid #7a0000;
+  box-shadow: 0 2px 6px rgba(0, 0, 0, 0.6);
+}
+
+.team-cell:hover .team-tooltip {
+  opacity: 1;
+}
+
+/* =========================
+   RESPONSIVE
+========================= */
+@media (max-width: 600px) {
+  .month-calendar {
+    padding: 1rem 1.2rem;
+  }
+
+  header h1::before {
+    content: "";
+  }
+}

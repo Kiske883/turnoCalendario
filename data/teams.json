@@ -1,0 +1,30 @@
+{
+  "startWeek": "2025-01-06",
+  "teams": [
+    {
+      "name": "Equipo LosDeAlLao",
+      "color": "#fff4d6",
+      "members": ["Jordi", "Pep"]
+    },
+    {
+      "name": "Equipo Chachi",
+      "color": "#d6eaff",
+      "members": ["Javi", "Lluis"]
+    },
+    {
+      "name": "Equipo Baetulo",
+      "color": "#dff5e1",
+      "members": ["Toni", "Fasi"]
+    },
+    {
+      "name": "Equipo LosDeArriba",
+      "color": "#fde2e2",
+      "members": ["Rata", "David", "Tato"]
+    },
+    {
+      "name": "Equipo Alejaos",
+      "color": "#f3e8ff",
+      "members": ["Andres", "Alex"]
+    }
+  ]
+}
