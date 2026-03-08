@@ -16,28 +16,58 @@
       "type": "priority"
     },
     {
-      "date": "2026-03-22",
-      "title": "HAMC BARCELONA - DIA 81 (undefined)",
+      "date": "2026-03-21",
+      "title": "Diablos MC Baix Llobregat",
       "type": "priority"
     },
     {
-      "date": "2026-undefined-03-04-05",
-      "title": "Rebels MC jef. Cambrils - Aniversario (undefined)",
-      "type": "normal"
+      "date": "2026-03-22",
+      "title": "HAMC BARCELONA - DIA 81",
+      "type": "priority"
+    },
+    {
+      "date": "2026-03-28",
+      "title": "Diablos MC Valles Occ - Concierto",
+      "type": "priority"
+    },
+    {
+      "date": "2026-04-18",
+      "title": "Diablos MC Valles Occ - Concierto",
+      "type": "priority"
     },
     {
       "date": "2026-04-19",
-      "title": "Road Eagles MC \r\nNorth East - 8º  Ann Eagle Day (undefined)",
+      "title": "Road Eagles MC North East - 8º  Ann Eagle Day",
       "type": "normal"
+    },
+    {
+      "date": "2026-04-25",
+      "title": "HAMC NOMADS - DIA 81 / Anniversary",
+      "type": "priority"
+    },
+    {
+      "date": "2026-04-26",
+      "title": "Diablos MC Baix Llobregat - Fiesta",
+      "type": "priority"
     },
     {
       "date": "2026-05-02",
-      "title": "Iron Horses MC - 4º aniversario  (undefined)",
+      "title": "Diablos MC Mallorca - 4º Aniversario",
+      "type": "priority"
+    },
+    {
+      "date": "2026-05-02",
+      "title": "Iron Horses MC - 4º aniversario",
       "type": "normal"
     },
     {
+      "date": "2026-05-09",
+      "title": "HAMC NOMADS - Mesa Valles",
+      "type": "priority"
+    },
+    {
       "date": "2026-05-10",
-      "title": "Iron Horses MC - 3 Fira dels Somnis (undefined)",
+      "title": "Iron Horses MC - 3 Fira dels Somnis",
       "type": "normal"
     },
     {
@@ -46,33 +76,63 @@
       "type": "normal"
     },
     {
-      "date": "2026-05-03-04-05",
-      "title": "Rebels MC jef. Miami - Aniversario (undefined)",
+      "date": "2026-05-16",
+      "title": "Diablos MC Valles Occ - Concierto",
+      "type": "priority"
+    },
+    {
+      "date": "2026-05-23",
+      "title": "Cowboys MC Rubi - XV Aniversario",
+      "type": "important"
+    },
+    {
+      "date": "2026-05-04",
+      "title": "Rebels MC jef. Miami - Aniversario",
+      "type": "normal"
+    },
+    {
+      "date": "2026-06-06",
+      "title": "Diablos MC Valles Occ - Concierto",
+      "type": "priority"
+    },
+    {
+      "date": "2026-06-07",
+      "title": "Riders MG Baix Llobregat - 4º Aniversario (09:00 a 15.00 h)",
       "type": "normal"
     },
     {
       "date": "2026-06-07",
-      "title": "Riders MG Baix Llobregat - 4 º Aniversario (09:00 a 15.00 h)",
+      "title": "Imperiales MC Mollet - Vermouth",
       "type": "normal"
     },
     {
       "date": "2026-06-13",
+      "title": "Jokers MC Sarda City - X Aniversario",
+      "type": "important"
+    },
+    {
+      "date": "2026-06-14",
       "title": "HAMC BARCELONA - ALIANZA BCN (20:00 h)",
       "type": "priority"
     },
     {
-      "date": "2026-06-11",
-      "title": "Jibaros MC Tarragona - 15º Aniversario (09:00 a 14:00)",
+      "date": "2026-06-14",
+      "title": "Jibaros MG - XV Aniversario (09:00 a 14:00)",
       "type": "important"
     },
     {
+      "date": "2026-06-20",
+      "title": "Diablos MC Baix Llobregat - Fiesta",
+      "type": "priority"
+    },
+    {
       "date": "2026-06-21",
-      "title": "Rebels MC Barcelona - 25º  Aniversario (undefined)",
+      "title": "Rebels MC Barcelona - 25º  Aniversario",
       "type": "important"
     },
     {
       "date": "2026-06-26",
-      "title": "Ben Xops MC - 7º  Aniversario (undefined)",
+      "title": "Ben Xops MC - 7º  Aniversario",
       "type": "normal"
     },
     {
