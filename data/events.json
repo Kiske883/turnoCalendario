@@ -86,6 +86,16 @@
       "type": "normal"
     },
     {
+      "date": "2026-05-22",
+      "title": "Diablos MC - Grio Al Infierno",
+      "type": "priority"
+    },
+    {
+      "date": "2026-05-23",
+      "title": "Diablos MC - Grio Al Infierno",
+      "type": "priority"
+    },
+    {
       "date": "2026-05-23",
       "title": "Cowboys MC Rubi - XV Aniversario",
       "type": "important"
@@ -98,6 +108,11 @@
     {
       "date": "2026-06-06",
       "title": "Diablos MC Valles Occ - Concierto",
+      "type": "priority"
+    },
+    {
+      "date": "2026-06-06",
+      "title": "Diablos MC Mallorca - 666 Fiesta",
       "type": "priority"
     },
     {
@@ -149,6 +164,11 @@
       "date": "2026-06-Pendiente dia",
       "title": "Corsarios MC Martorell - 7º  Aniversario (undefined)",
       "type": "normal"
+    },
+    {
+      "date": "2026-07-18",
+      "title": "Diablos MC Euskadi - 1º Aniversario",
+      "type": "priority"
     },
     {
       "date": "2026-09-13",
