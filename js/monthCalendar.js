@@ -1,7 +1,7 @@
 import { getMonday } from "./utils.js";
 import { getTeamForWeek } from "./rotation.js";
 
-export function renderMonthCalendar(container, date, teams, startWeek) {
+export function renderMonthCalendar(container, date, teams, startWeek, events) {
   container.innerHTML = "";
 
   const year = date.getFullYear();
@@ -54,6 +54,10 @@ export function renderMonthCalendar(container, date, teams, startWeek) {
     const current = new Date(year, month, day);
     const weekday = (current.getDay() + 6) % 7; // lunes = 0
 
+    // const iso = current.toISOString().split("T")[0];
+    const iso = current.toLocaleDateString("sv-SE");
+    const dayEvents = events.filter((e) => e.date === iso);
+
     // Si es lunes, pintamos antes la celda del equipo
     if (weekday === 0) {
       const monday = getMonday(current);
@@ -67,6 +71,7 @@ export function renderMonthCalendar(container, date, teams, startWeek) {
         ${team.members.join("<br>")}
         </div>
         `;
+
       teamCell.style.backgroundColor = team.color || "#eee";
 
       grid.appendChild(teamCell);
@@ -78,7 +83,36 @@ export function renderMonthCalendar(container, date, teams, startWeek) {
     const cell = document.createElement("div");
     cell.className = "day";
     cell.textContent = day;
-    cell.style.backgroundColor = team.color || "#eee";
+
+    if (weekday < 5) {
+      cell.style.backgroundColor = team.color || "#eee";
+    } else {
+      cell.classList.add("weekend");
+    }
+
+    if (dayEvents.length > 0) {
+      const type = dayEvents[0].type || "normal";
+
+      if (type === "priority") {
+        cell.classList.add("event-priority");
+      } else if (type === "important") {
+        cell.classList.add("event-important");
+      } else {
+        cell.classList.add("event-normal");
+      }
+
+      const tooltip = document.createElement("div");
+      tooltip.className = "event-tooltip";
+      tooltip.innerHTML = dayEvents.map((e) => e.title).join("<br>");
+
+      /*
+      const dot = document.createElement("span");
+      dot.className = "event-dot";
+      cell.appendChild(dot);      
+      */
+
+      cell.appendChild(tooltip);
+    }
 
     const today = new Date();
     if (current.toDateString() === today.toDateString()) {

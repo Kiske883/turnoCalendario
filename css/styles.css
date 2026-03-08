@@ -279,6 +279,103 @@ header h1::before {
   opacity: 1;
 }
 
+.event-tooltip {
+  display: none;
+  position: absolute;
+  background: #333;
+  color: white;
+  padding: 5px;
+  border-radius: 4px;
+  font-size: 12px;
+}
+
+.day:hover .event-tooltip {
+  display: block;
+}
+
+.event-dot {
+  display: inline-block;
+  width: 6px;
+  height: 6px;
+  margin-left: 4px;
+  border-radius: 50%;
+  background: #28a745;
+  animation: pulse 2s infinite;
+}
+
+@keyframes pulse {
+  0% {
+    box-shadow: 0 0 0 0 rgba(40, 167, 69, 0.6);
+  }
+  70% {
+    box-shadow: 0 0 0 6px rgba(40, 167, 69, 0);
+  }
+  100% {
+    box-shadow: 0 0 0 0 rgba(40, 167, 69, 0);
+  }
+}
+
+.event-day {
+  position: relative;
+  background-color: #81d399 !important;
+  border: 2px solid #28a745;
+  animation: pulseBorder 2s infinite;
+}
+
+/* Evento normal */
+.event-normal {
+  background-color: #c8f2d4 !important;
+  border: 2px solid #28a745;
+}
+
+/* Evento importante */
+.event-important {
+  background-color: #ffe7c2 !important;
+  border: 2px solid #ff9800;
+}
+
+/* Evento prioritario */
+.event-priority {
+  background-color: #ffd6d6 !important;
+  border: 2px solid #e53935;
+}
+
+.event-normal,
+.event-important,
+.event-priority {
+  animation: pulseBorder 2s infinite;
+}
+
+@keyframes pulseDay {
+  0% {
+    box-shadow: 0 0 0 0 rgba(40, 167, 69, 0.6);
+  }
+  70% {
+    box-shadow: 0 0 0 10px rgba(40, 167, 69, 0);
+  }
+  100% {
+    box-shadow: 0 0 0 0 rgba(40, 167, 69, 0);
+  }
+}
+
+.weekend {
+  background-color: #c8f2d4 !important;
+}
+
+/* eventos */
+
+.event-normal {
+  background-color: #dfd59d !important;
+}
+
+.event-important {
+  background-color: #ebb552 !important;
+}
+
+.event-priority {
+  background-color: #db7777 !important;
+}
+
 /* =========================
    RESPONSIVE
 ========================= */
