@@ -47,9 +47,15 @@ async function loadConfig() {
 
   events = dataEvents.events;
 }
-
+/*
 function getEventsForDate(date) {
   const iso = date.toISOString().split("T")[0];
+  return events.filter((e) => e.date === iso);
+}
+*/
+
+function getEventsForDate(date) {
+  const iso = date.toLocaleDateString("sv-SE");
   return events.filter((e) => e.date === iso);
 }
 

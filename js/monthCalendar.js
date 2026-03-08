@@ -11,6 +11,7 @@ export function renderMonthCalendar(container, date, teams, startWeek, events) {
   const lastDay = new Date(year, month + 1, 0);
 
   const startWeekday = (firstDay.getDay() + 6) % 7; // lunes = 0
+  // const startWeekday = (getMonday(firstDay).getDay() + 6) % 7;
 
   const grid = document.createElement("div");
   grid.className = "month-grid";
@@ -59,7 +60,7 @@ export function renderMonthCalendar(container, date, teams, startWeek, events) {
     const dayEvents = events.filter((e) => e.date === iso);
 
     // Si es lunes, pintamos antes la celda del equipo
-    if (weekday === 0) {
+    if (grid.children.length % 8 === 0) {
       const monday = getMonday(current);
       const team = getTeamForWeek(monday, teams, startWeek);
 
