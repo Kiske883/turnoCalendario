@@ -11,6 +11,11 @@
       "type": "normal"
     },
     {
+      "date": "2026-03-13",
+      "title": "HAMC BARCELONA - Open Day",
+      "type": "priority"
+    },
+    {
       "date": "2026-03-14",
       "title": "Diablos MC Ciudad Condal - 33º Aniversario (11:00)",
       "type": "priority"
@@ -22,12 +27,17 @@
     },
     {
       "date": "2026-03-22",
-      "title": "HAMC BARCELONA - DIA 81",
+      "title": "HAMC BARCELONA - DIA 81 (10:00) Garaje 1950",
       "type": "priority"
     },
     {
       "date": "2026-03-28",
       "title": "Diablos MC Valles Occ - Concierto",
+      "type": "priority"
+    },
+    {
+      "date": "2026-03-28",
+      "title": "HAMC COSTA BRAVA - 81 Day",
       "type": "priority"
     },
     {
