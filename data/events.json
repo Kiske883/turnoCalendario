@@ -306,9 +306,54 @@
       "type": "normal"
     },
     {
+      "date": "2026-12-11",
+      "title": "Diablos MC Ciudad Condal - Cena Navidad",
+      "type": "normal"
+    },
+    {
+      "date": "2026-12-27",
+      "title": "Diablos MC Nomadas - Comida Navidad",
+      "type": "normal"
+    },
+    {
       "date": "2027-01-10",
       "title": "Jibaros Mc Tarragona - 10º  Aniversario",
       "type": "normal"
+    },
+    {
+      "date": "2027-02-06",
+      "title": "Diablos Mc Nomadas - Punk&Wheels",
+      "type": "normal"
+    },
+    {
+      "date": "2027-02-20",
+      "title": "Diablos MC Valles Occ - Dia 46",
+      "type": "normal"
+    },
+    {
+      "date": "2027-03-04",
+      "title": "Diablos MC Ciudad Condal - 34 Aniversario",
+      "type": "normal"
+    },
+    {
+      "date": "2027-05-15",
+      "title": "Diablos MC Mallorca - 5 Aniversario",
+      "type": "priority"
+    },
+    {
+      "date": "2027-07-17",
+      "title": "Diablos MC Euskadi - 1 Aniversario",
+      "type": "priority"
+    },
+    {
+      "date": "2027-09-25",
+      "title": "Diablos MC Valles Occ - 10 Aniversario (19:00 h )",
+      "type": "priority"
+    },
+    {
+      "date": "2027-11-06",
+      "title": "Diablos MC Baix Llobregat - 14 Aniversario",
+      "type": "priority"
     }
   ]
 }
